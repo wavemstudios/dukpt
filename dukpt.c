@@ -26,7 +26,8 @@
  * arm-linux-gcc -Wall -Werror dukpt-demo.c -o dukpt-demo -lfepkcs11 -lcrypto
  * fesign --module opensc-pkcs11.so --pin 648219 --slotid 1 --keyid 00a0 \
  *	  --infile dukpt-demo
- */
+ * test
+ **/
 
 #include <stdio.h>
 #include <stdint.h>
