@@ -36,8 +36,6 @@
 
 #define ARRAY_SIZE(x) (sizeof(x)/sizeof(*(x)))
 
-#define IMPORTKEY
-
 static char *bin2hex(char *out, const void *in, size_t len)
 {
 	const char *p = (const char *)in;
@@ -224,10 +222,6 @@ int main(void)
 	size_t len = sizeof(buffer);
 
 	crypto_token_login(&hSession);
-
-#ifdef IMPORTKEY
-
-#endif
 
 	hIKey = get_dukpt_ikey(hSession, label, id);
 	if (hIKey == CK_INVALID_HANDLE) {
